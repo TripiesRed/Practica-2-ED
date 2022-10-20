@@ -50,11 +50,12 @@ class MaxStack {
 private:
 
     /**
-     @brief Cola que actúa como contenedor lineal de la memoria de la pila de tipo MaxStack
+     @brief Dato miembro de tipo cola que actúa como contenedor lineal de la memoria de
+        la pila de tipo MaxStack.
 
      La "queue" memoria simula el almacenamiento interno que tendría la pila MaxStack, permitiéndonos
-     guardar los datos de tipo "element" y trabajar con ellos con los métodos propios de la
-     clase "queue" con el fin de desarrollar métodos propios para la clase MaxStack.
+         guardar los datos de tipo "element" y trabajar con ellos con los métodos propios de la
+         clase "queue" con el fin de desarrollar métodos propios para la clase MaxStack.
      **/
 
     queue<element> memoria;
@@ -78,13 +79,11 @@ public:
 
     int size () const; //Devuelve el número de elementos de la pila
 
-    void clear (); //Vacía la pila por completo
-
     void swap (MaxStack & p); //Intercambia los elementos de dos pilas
 
     element top () const;   //Devuelve el último elemento añadido a la pila
 
-    void push (element n);  //Añade un nuevo elemento
+    void push (int n);  //Añade un nuevo elemento
 
     void pop (); //Borra el último elemento añadido
 
