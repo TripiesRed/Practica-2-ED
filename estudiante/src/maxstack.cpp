@@ -20,13 +20,13 @@ using namespace std;
 // Constructor por defecto
 MaxStack::MaxStack() {}
 
-// Destructor
-MaxStack::~MaxStack() {}
-
 // Constructor de copia
 MaxStack::MaxStack(const MaxStack &origin) {
     memoria=origin.memoria;
 }
+
+// Destructor
+MaxStack::~MaxStack() {}
 
 // Operador de copia
 MaxStack &MaxStack::operator=(const MaxStack &origin) {

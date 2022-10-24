@@ -29,12 +29,13 @@ private:
 
     stack<element> memoria;
 
+
 public:
 
     /**
       * @brief Constructor por defecto.
       * @post Genera una pila con 0 elementos.
-      * @return MaxStack, el objeto imagen creado.
+      * @return MaxQueue, el objeto imagen creado.
       **/
     MaxQueue(); //Constructor por defecto
 
@@ -44,19 +45,27 @@ public:
 
     MaxQueue & operator= (const MaxQueue & origin); //Operador de copia
 
-    bool Empty() const; //Comprueba si la pila está vacía
+    bool Empty() const; //Comprueba si la cola está vacía
 
-    int size () const; //Devuelve el número de elementos de la pila
+    int size () const; //Devuelve el número de elementos de la cola
 
-    void swap (MaxQueue & p); //Intercambia los elementos de dos pilas
+    void swap (MaxQueue & p); //Intercambia los elementos de dos colas
 
-    element front () const;   //Devuelve el primer elemento añadido a la pila
+    /**
+     * @brief
+     * @param p
+     * @pre La cola no puede estar vacía
+     * @post La cola cuyos elementos vamos a copiar, no se modifica
+     */
+    void invert (MaxQueue &p) const; //Copia los elementos de la cola en otra invirtiendo el orden
 
-    element back () const; //Devuelve el último elemento añadido a la pila
+    element front () const;   //Devuelve el primer elemento añadido a la cola
+
+    element back () const; //Devuelve el último elemento añadido a la cola
 
     void push (int n);  //Añade un nuevo elemento
 
-    void pop (); //Borra el último elemento añadido
+    void pop (); //Borra el primer elemento añadido
 
 
 };
