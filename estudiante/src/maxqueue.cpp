@@ -75,7 +75,6 @@ element MaxQueue::front() const {
 // Método que añade un nuevo elemento a la cola
 void MaxQueue::push(int n) {
 
-    //Ajustamos parámetro max del nuevo elemento
     element newelement;
     newelement.value = n;
 
