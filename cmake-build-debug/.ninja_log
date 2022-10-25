@@ -24,3 +24,7 @@
 306	339	1666603056082288871	cola_max	bc003ebdace43711
 1	197	1666603073482658185	CMakeFiles/cola_max.dir/estudiante/src/cola_max.cpp.o	69562a5dc1b93412
 197	231	1666603073514658860	cola_max	bc003ebdace43711
+1	329	1666700468162437695	CMakeFiles/cola_max.dir/estudiante/src/cola_max.cpp.o	69562a5dc1b93412
+1	417	1666700468250527983	CMakeFiles/maxqueue.dir/estudiante/src/maxqueue.cpp.o	7fcebc254867d50a
+417	426	1666700468258536190	libmaxqueue.a	db2d9388b7d63de4
+426	467	1666700468298577230	cola_max	bc003ebdace43711

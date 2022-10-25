@@ -2,6 +2,7 @@
 #include <fstream>
 #include <stdlib.h>
 #include <string>
+#include <algorithm>
 #include "maxqueue.h"
 
 using namespace std;
@@ -14,10 +15,7 @@ ostream & operator<<(ostream& flujo, const element& n){
 int main(int argc, char *argv[]){
 
     // // Run the current exercise
-    MaxQueue queue, var1, var2;
-
-    for(int i = 0; i < 4; i++)
-        var1.push(i);
+    MaxQueue queue;
 
     for(int i = 1; i < argc; i++){
         if (argv[i][0] == '.'){
