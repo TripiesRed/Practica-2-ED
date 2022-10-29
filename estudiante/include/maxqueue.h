@@ -70,12 +70,6 @@ public:
     MaxQueue(const MaxQueue & origin); //Constructor de copia
 
     /**
-     * @brief Destructor de la clase.
-     * @post El objeto se borra de la memoria.
-     */
-    ~MaxQueue(); //Destructor
-
-    /**
      * @brief Operador de copia.
      * @param origin Objeto que se copia
      * @post origin no se modifica
@@ -103,22 +97,9 @@ public:
     void swap (MaxQueue & p); //Intercambia los elementos de dos colas
 
     /**
-     * @brief Copia los elementos de la cola en otra invirtiendo el orden
-     * @param p Cola que se copia
-     * @pre La cola no puede estar vacía.
-     * @post La cola cuyos elementos se copian, no se modifica.
-     */
-    void invert (MaxQueue &p) const; //Copia los elementos de la cola en otra invirtiendo el orden
-
-    /**
      * @return Devuelve el primer elemento añadido a la cola
      */
     element front () const;   //Devuelve el primer elemento añadido a la cola
-
-    /**
-     * @return Devuelve el último elemento añadido a la cola
-     */
-    element back () const; //Devuelve el último elemento añadido a la cola
 
     /**
      * @brief Añade un nuevo elemento a la cola

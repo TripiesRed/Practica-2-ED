@@ -1,7 +1,7 @@
-/home/diegoos_03/CLionProjects/Practica-2-ED/cmake-build-debug/CMakeFiles/maxstack.dir
-/home/diegoos_03/CLionProjects/Practica-2-ED/cmake-build-debug/CMakeFiles/maxqueue.dir
-/home/diegoos_03/CLionProjects/Practica-2-ED/cmake-build-debug/CMakeFiles/pila_max.dir
-/home/diegoos_03/CLionProjects/Practica-2-ED/cmake-build-debug/CMakeFiles/cola_max.dir
-/home/diegoos_03/CLionProjects/Practica-2-ED/cmake-build-debug/CMakeFiles/doc_doxygen.dir
-/home/diegoos_03/CLionProjects/Practica-2-ED/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/diegoos_03/CLionProjects/Practica-2-ED/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/gonzalomp/Escritorio/EstructuraDatos/ej02_pilas_colas/cmake-build-debug/CMakeFiles/maxstack.dir
+/home/gonzalomp/Escritorio/EstructuraDatos/ej02_pilas_colas/cmake-build-debug/CMakeFiles/maxqueue.dir
+/home/gonzalomp/Escritorio/EstructuraDatos/ej02_pilas_colas/cmake-build-debug/CMakeFiles/pila_max.dir
+/home/gonzalomp/Escritorio/EstructuraDatos/ej02_pilas_colas/cmake-build-debug/CMakeFiles/cola_max.dir
+/home/gonzalomp/Escritorio/EstructuraDatos/ej02_pilas_colas/cmake-build-debug/CMakeFiles/doc_doxygen.dir
+/home/gonzalomp/Escritorio/EstructuraDatos/ej02_pilas_colas/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/gonzalomp/Escritorio/EstructuraDatos/ej02_pilas_colas/cmake-build-debug/CMakeFiles/rebuild_cache.dir

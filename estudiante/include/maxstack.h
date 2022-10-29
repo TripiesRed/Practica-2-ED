@@ -78,12 +78,6 @@ public:
     MaxStack(const MaxStack & origin); //Constructor de copia
 
     /**
-     * @brief Destructor de la clase.
-     * @post El objeto se borra de la memoria.
-     */
-    ~MaxStack(); //Destructor
-
-    /**
      * @brief Operador de copia.
      * @param origin Objeto que se copia
      * @post origin no se modifica
