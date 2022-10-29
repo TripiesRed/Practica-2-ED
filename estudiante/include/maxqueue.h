@@ -12,7 +12,29 @@ using namespace std;
 #include <iostream>
 #include <stack>
 
-// Aquí falta la especificación de MaxQueue
+/**
+ @brief T.D.A MaxStack
+
+ Se trata de una variación del tipo de dato abstracto Cola, concretamente de enteros.
+
+ Así pues, se trata de una estructura capaz de almacenar en cada posición datos del tipo entero,
+    y que además, permite conocer el valor máximo contenido en la estructura en cada momento.
+ Si bien está implementada con pilas, solo permite introducir y borrar elementos por los dos extremos de la
+    secuencia al igual que una cola normal, siguiendo así el modelo de secuencia FIFO (First In First Out).
+
+ Para la implementación de este TDA utilizaremos un tipo de dato abstracto, "element",
+    cuya especificación veremos a continuación.
+
+ Para poder usar el TDA MaxQueue se debe incluir el fichero
+
+  \#include <maxqueue.h>
+
+  @author Gonzalo Martínez Piédrola
+  @author Diego Ortega Sánchez
+  @date Octubre 2022
+
+ **/
+
 
 /**
  * @brief T.D.A que almacena un valor entero y el valor máximo de la pila en el momento

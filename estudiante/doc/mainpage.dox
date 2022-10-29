@@ -4,12 +4,65 @@
 
 En esta práctica se trabaja en profundidad con los tipos de datos **pila** y **cola** en dos aspectos:
 + **Implementación** de las clases *MaxStack* y *MaxQueue*. Particularmente, cada estructura se desarrolla utilizando la otra,
-es decir, se usan colas para imlementar y pilas y viceversa.
-+ **Incorporación** de ficheros ejecutables que ponen de manifiesto el funiconamiento de los TDAs *MaxStack* y *MaxQueue*.
+es decir, se usan colas para imlementar y pilas y viceversa. La singularidad de estas estructuras será el almacenamiento del valor máximo contenido en cada una de ellas (almacenan enteros).
++ **Incorporación** de ficheros ejecutables que ponen de manifiesto el funcionamiento de los TDAs *MaxStack* y *MaxQueue*.
 
+# Observaciones acerca de la implentación de los TDA
+
+## TDA MaxStack
+Se trata de una variación del tipo de dato abstracto Pila, concretamente de enteros.
+
+ Así pues, se trata de una estructura capaz de almacenar en cada posición datos del tipo entero,
+    y que además, permite conocer el valor máximo contenido en la estructura en cada momento.
+ Si bien está implementada con colas, solo permite introducir y borrar elementos por un extremo de la
+    secuencia (denominado tope) al igual que una pila normal, siguiendo así el modelo de secuencia **LIFO** (Last In First Out).
+
+ Para la implementación de este TDA utilizaremos un tipo de dato *element* (parejas de enteros).
+
+## TDA MaxQueue
+Se trata de una variación del tipo de dato abstracto Cola, concretamente de enteros.
+
+ Así pues, se trata de una estructura capaz de almacenar en cada posición datos del tipo entero,
+    y que además, permite conocer el valor máximo contenido en la estructura en cada momento.
+ Si bien está implementada con pilas, solo permite introducir y borrar elementos por los dos extremos de la
+    secuencia al igual que una cola normal, siguiendo así el modelo de secuencia **FIFO** (First In First Out).
+
+ Para la implementación de este TDA utilizaremos el mismo tipo de dato que en la estructura anterior.
 
 # Ejecutables
 
-A RELLENAR POR EL ESTUDIANTE
+## TDA MaxStack
+Para verificar el correcto funcionamiento de la estructura, iteramos sobre una serie de argumentos de manera que:
++ Si el argumento es numérico, se inserta en la pila.
++ Por otro lado, si el argumento es un punto, mostramos y extraemos el tope de la pila, que es un elemento formado por valor de la posición y valor máximo en la pila.
+
+Dada la entrada: 1 2 . 3 4 . . .
+
+La salida del programa debe ser:
+
+2,2
+
+4,4
+
+3,3
+
+1,1
+
+## TDA MaxQueue
+De manera similar al TDA anterior, iteramos sobre una serie de argumentos siguiendo el procedimiento:
++ Si el argumento es un número, se inserta en la cola.
++ Si en cambio el argumento es un punto, imprime y saca de la cola el elemento que corresponda.
+
+Dada la entrada: 1 2 . 3 4 . . .
+
+La salida debería ser:
+
+1,2
+
+2,4
+
+3,4
+
+4,4
 
 */

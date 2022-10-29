@@ -18,9 +18,9 @@ using namespace std;
  Se trata de una variación del tipo de dato abstracto Pila, concretamente de enteros.
 
  Así pues, se trata de una estructura capaz de almacenar en cada posición datos del tipo entero,
-    y que además, nos permitirá conocer el valor máximo contenido en la estructura en cada momento.
- Al igual que una pila normal, solo permite introducir y borrar elementos por un extremo de la
-    secuencia denominado tope, siguiendo así el modelo de secuencia LIFO (Last In First Out).
+    y que además, permite conocer el valor máximo contenido en la estructura en cada momento.
+ Si bien está implementada con colas, solo permite introducir y borrar elementos por un extremo de la
+    secuencia denominado tope al igual que una pila normal, siguiendo así el modelo de secuencia LIFO (Last In First Out).
 
  Para la implementación de este TDA utilizaremos un tipo de dato abstracto, "element",
     cuya especificación veremos a continuación.
