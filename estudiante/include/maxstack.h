@@ -18,9 +18,9 @@ using namespace std;
  Se trata de una variación del tipo de dato abstracto Pila, concretamente de enteros.
 
  Así pues, se trata de una estructura capaz de almacenar en cada posición datos del tipo entero,
-    y que además, nos permitirá conocer el valor máximo contenido en la estructura en cada momento.
- Al igual que una pila normal, solo permite introducir y borrar elementos por un extremo de la
-    secuencia denominado tope, siguiendo así el modelo de secuencia LIFO (Last In First Out).
+    y que además, permite conocer el valor máximo contenido en la estructura en cada momento.
+ Si bien está implementada con colas, solo permite introducir y borrar elementos por un extremo de la
+    secuencia denominado tope al igual que una pila normal, siguiendo así el modelo de secuencia LIFO (Last In First Out).
 
  Para la implementación de este TDA utilizaremos un tipo de dato abstracto, "element",
     cuya especificación veremos a continuación.
@@ -69,20 +69,63 @@ public:
       **/
     MaxStack(); //Constructor por defecto
 
+    /**
+     * @brief Constructor de copia.
+     * @param origin Objeto que se copia.
+     * @return El objeto copiado.
+     * @post origin no se modifica.
+     */
     MaxStack(const MaxStack & origin); //Constructor de copia
 
+    /**
+     * @brief Destructor de la clase.
+     * @post El objeto se borra de la memoria.
+     */
+    ~MaxStack(); //Destructor
+
+    /**
+     * @brief Operador de copia.
+     * @param origin Objeto que se copia
+     * @post origin no se modifica
+     * @return Devuelve un objeto igual que origin
+     */
     MaxStack & operator= (const MaxStack & origin); //Operador de copia
 
+    /**
+     * @brief Comprueba si la pila está vacía.
+     * @return Devuelve "true" si la pila está vacía, "false" en otro caso.
+     */
     bool Empty() const; //Comprueba si la pila está vacía
 
+    /**
+     * @brief Cuenta el número de elementos que hay en la pila.
+     * @return Devuelve el número de elementos de la pila.
+     */
     int size () const; //Devuelve el número de elementos de la pila
 
+    /**
+     * @brief Intercambia los elementos de dos pilas
+     * @param p Pila que se intercambia con la cola a la que se aplica el método
+     * @post Las dos pilas se intercambian.
+     */
     void swap (MaxStack & p); //Intercambia los elementos de dos pilas
 
+    /**
+     * @return Devuelve el último elemento añadido a la pila
+     */
     element top () const;   //Devuelve el último elemento añadido a la pila
 
+    /**
+     * @brief Añade un nuevo elemento a la pila
+     * @param n El elemento que se añade
+     * @post El tamaño de la pila aumenta en una unidad
+     */
     void push (int n);  //Añade un nuevo elemento
 
+    /**
+     * @brief Borra el primer elemento añadido
+     * @post El tamaño de la pila se reduce en una unidad
+     */
     void pop (); //Borra el último elemento añadido
 
 
