@@ -13,20 +13,18 @@
 
 using namespace std;
 
+
 /****************************************
         FUNCIONES PÚBLICAS
 *****************************************/
 
 // Constructor por defecto
-MaxStack::MaxStack() {}
+MaxStack::MaxStack() {};
 
 // Constructor de copia
 MaxStack::MaxStack(const MaxStack &origin) {
     memoria=origin.memoria;
 }
-
-// Destructor
-MaxStack::~MaxStack() {}
 
 // Operador de copia
 MaxStack &MaxStack::operator=(const MaxStack &origin) {
@@ -66,8 +64,8 @@ void MaxStack::push(int n) {
 
 
     else{
-        if(top().max <= newelement.value)
-            newelement.max = newelement.value;
+        if(top().max <= n)
+            newelement.max = n;
 
         else
             newelement.max = top().max;
@@ -79,14 +77,18 @@ void MaxStack::push(int n) {
 
 // Método que elimina el último elemento añadido a la pila
 void MaxStack::pop() {
-    MaxStack copy;
 
-    for (int i = 0; i < size(); i++){
-        copy.push(memoria.front().value);
-        memoria.pop();
+    if(!Empty()){
+        MaxStack aux;
+        int tam = size();
+
+        for (int i = 1; i < tam; i++){
+            aux.push(memoria.front().value);
+            memoria.pop();
+        }
+
+        memoria=aux.memoria;
     }
-
-    *this=copy;
 }
 
 

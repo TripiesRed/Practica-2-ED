@@ -71,8 +71,6 @@ public:
 
     MaxStack(const MaxStack & origin); //Constructor de copia
 
-    ~MaxStack(); //Destructor
-
     MaxStack & operator= (const MaxStack & origin); //Operador de copia
 
     bool Empty() const; //Comprueba si la pila está vacía
