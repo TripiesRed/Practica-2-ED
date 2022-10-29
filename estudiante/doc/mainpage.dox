@@ -1,8 +1,12 @@
-/*! \mainpage Título de la página principal
+/*! \mainpage Práctica 2: TDAs lienales. Pilas y colas.
 
 # Introducción
 
-A RELLENAR POR EL ESTUDIANTE
+En esta práctica se trabaja en profundidad con los tipos de datos **pila** y **cola** en dos aspectos:
++ **Implementación** de las clases *MaxStack* y *MaxQueue*. Particularmente, cada estructura se desarrolla utilizando la otra,
+es decir, se usan colas para imlementar y pilas y viceversa.
++ **Incorporación** de ficheros ejecutables que ponen de manifiesto el funiconamiento de los TDAs *MaxStack* y *MaxQueue*.
+
 
 # Ejecutables
 
